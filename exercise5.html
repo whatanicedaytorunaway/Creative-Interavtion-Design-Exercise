@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
-    <title>Javascript</title>
+    <title>javascript</title>
+
+    <script src="script5.js" charset="utf-8"></script>   <!--JS的link在head里-->
   </head>
+
+
   <body>
-    <h1 id="demo">Click the button to have some fun!</h1>
-    <button onclick="sayhello()">Click me</button>
-    <button onclick="showTopic()">Hit me</button>
-    <script src="script.js"></script>
+    <h1>Click the button!</h1>
+   <!--onclick触发了JS里的function-->
+    <button onclick="sayHello()">Click me!</button>
+    <!--onclick 是一个 HTML 属性，(里面填写当你点击了按钮会发生什么)
+      它指定了当按钮被点击时所执行的 JavaScript 代码或者 JavaScript 函数。
+      你可以将 onclick 属性的值设置为任何合法的 JavaScript 代码，比如函数调用、表达式等。-->
+
+   <!--onclick改变样式表-->
+   <button onclick="showTopic()">button 2</button>
+   <h2 id="demo">当button 2被点击了，我的样式会变为红色</h2>
   </body>
 </html>
